@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+  #테이블 생성 후에 data.sql실행
+  h2:
+    console:
+      enabled: true
+  defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+  jpa:
+    #전송 쿼리 확인
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+auto-commit: false
+
